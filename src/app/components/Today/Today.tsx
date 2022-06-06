@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './Today.scss';
 
 const Today = () => {
@@ -10,7 +12,7 @@ const Today = () => {
 
 	return (
 		<div className="today">
-			<span className="capitalize">{weekday}</span>,
+			<span id='weekday' className="capitalize">{weekday}</span>,
 			<span>
 				{day} <span className="capitalize">{month}</span> de {year}
 			</span>
