@@ -1,0 +1,20 @@
+.post {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 4px;
+	}
+
+	&__text {
+		font-style: 15px;
+		color: #504c4c;
+		margin-bottom: 8px;
+	}
+
+	&__owner {
+		color: #6d6d6d;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,16 @@
+.toggle-theme {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+
+	span {
+		font-size: 12px;
+		font-weight: 500;
+		margin-right: 4px;
+	}
+
+	img {
+		width: 28px;
+		height: 28px;
+	}
+}

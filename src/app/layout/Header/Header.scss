@@ -1,0 +1,65 @@
+@import '../../../assets/styles/abstracts/breakpoints';
+
+.ui-header {
+
+	position: relative;
+
+	&__banner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 64px;
+
+		h3 {
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__logo{
+		font-size: 20px;
+
+		@include mq(md) {
+			font-size: 28px;
+		}
+	}
+
+	&__navigation {
+		background-color: #EEE;
+	}
+
+	&__navigation-wrapper {
+		height: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__btn-menu {
+		display: block;
+
+		@include mq(md) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	&__routes {
+		display: none;
+		visibility: hidden;
+
+		@include mq(md) {
+			display: block;
+			visibility: visible;
+		}
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+}
