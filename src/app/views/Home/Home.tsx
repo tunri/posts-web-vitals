@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 import Header from "app/layout/Header/Header";
-import Post from "app/components/Post/Post";
+
 import useInfinitePosts from "app/hooks/useInfinitePosts";
+import ListPosts from "./ListPosts";
 
 import "./Home.scss";
 
@@ -16,14 +17,11 @@ const Home = () => {
 
 			<main className="o-content py-8">
 				<section className="container mx-auto">
-					{posts
-						.filter((post) => post.title?.includes(query))
-						.map((item) => (
-							<Post
-								post={item}
-								key={`post-${item.userId}${item.id}`}
-							/>
-						))}
+					<ListPosts
+						posts={posts.filter((post) =>
+							post.title?.includes(query)
+						)}
+					/>
 				</section>
 			</main>
 		</div>
