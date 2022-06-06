@@ -8,7 +8,9 @@ const Today = () => {
 	const weekday = date.toLocaleDateString("es-ES", { weekday: "short" });
 	const month = date.toLocaleDateString("es-ES", { month: "short" });
 	const year = date.getFullYear();
-	const day = date.getDay();
+	const day = date.getDate();
+
+	console.log(day);
 
 	return (
 		<div className="today">
